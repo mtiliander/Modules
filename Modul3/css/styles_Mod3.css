@@ -1,0 +1,200 @@
+body {
+  font-size: 16px;
+  color: black;
+  /*background-color: white;*/
+  font-family: 'Oxygen', sans-serif;
+}
+
+header {
+  /* margin-bottom: 25px; */
+}
+
+
+/** HEADER **/
+#header-nav {
+  background-color: red;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: black;
+  height: 50px;
+  margin-bottom: 0px;
+  color: black;
+  vertical-align: center;
+}
+
+.navbar-brand {
+  /* padding-top: 10px; */
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: black;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+#nav-list {
+  margin-top: 10px;
+  color: black;
+  clear: both;
+}
+
+#nav-list a {
+  color: black;
+  text-align: center;
+  border-color: black;
+  border-width: 1px;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list a span {
+  clear: both;
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  clear: both;
+  border: 1px solid black;
+  color: black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  color: black;
+  margin-top: -45px; 
+}
+
+/* END HEADER */
+/* HOME PAGE */
+/*
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  height: 1000px;
+  color: black;
+}
+*/
+#ourmenu-div {
+  height: 100px;
+  color: black;
+  background-color: white;
+}
+#chicken-div {
+  height: 1000px;
+  color: black;
+  background-color: grey;
+  padding: 10px;
+}
+
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+  .container .jumbotron {
+   /*  background: url('../images/jumbotron_1200.jpg') no-repeat; */
+    height: 1000px;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  
+  /*
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 1000px;
+    margin: 5px 5px 5px 0;
+  } */
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    /*background: url('../images/jumbotron_992.jpg') no-repeat;*/
+    height: 1000px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    /* background: url('../images/jumbotron_768.jpg') no-repeat; */
+    height: 1000px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 100px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav {
+    height: 150px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: black;
+    width: 100%;
+    border-color: black;
+    border-width: 1px;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+    color: black;
+    width: 100%;
+    border-color: black;
+    border-width: 1px;
+  }
+
+  #collapsable-nav a div{ /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+    color: black;
+    width: 100%;
+    border-color: black;
+    border-width: 1px;
+  }
+
+  /* End Header */
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 5vw;
+  }
+  
+}
